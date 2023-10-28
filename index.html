@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="bg-primary text-white p-3">Credit Card Fraud Detection</h1>
+        <form id="myForm" action="/predict" method="post" class="bg-light p-3 rounded">
+            <div class="form-group">
+                <label for="time">Time (int64):</label>
+                <input type="text" class="form-control" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="v1">V1 (float64):</label>
+                <input type="text" class="form-control" id="v1" name="v1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="v2">V2 (float64):</label>
+                <input type="text" class="form-control" id="v2" name="v2" required>
+            </div>
+
+            <div class="form-group">
+    <label for="v3">V3 (float64):</label>
+    <input type="text" class="form-control" id="v3" name="v3" required>
+</div>
+
+<div class="form-group">
+    <label for="v4">V4 (float64):</label>
+    <input type="text" class="form-control" id="v4" name="v4" required>
+</div>
+
+<div class="form-group">
+    <label for="v5">V5 (float64):</label>
+    <input type="text" class="form-control" id="v5" name="v5" required>
+</div>
+
+<div class="form-group">
+    <label for="v6">V6 (float64):</label>
+    <input type="text" class="form-control" id="v6" name="v6" required>
+</div>
+
+<div class="form-group">
+    <label for="v7">V7 (float64):</label>
+    <input type="text" class="form-control" id="v7" name="v7" required>
+</div>
+
+<div class="form-group">
+    <label for="v8">V8 (float64):</label>
+    <input type="text" class="form-control" id="v8" name="v8" required>
+</div>
+
+<div class="form-group">
+    <label for="v9">V9 (float64):</label>
+    <input type="text" class="form-control" id="v9" name="v9" required>
+</div>
+
+<div class="form-group">
+    <label for="v10">V10 (float64):</label>
+    <input type="text" class="form-control" id="v10" name="v10" required>
+</div>
+
+<div class="form-group">
+    <label for="v11">V11 (float64):</label>
+    <input type="text" class="form-control" id="v11" name="v11" required>
+</div>
+
+<div class="form-group">
+    <label for="v12">V12 (float64):</label>
+    <input type="text" class="form-control" id="v12" name="v12" required>
+</div>
+
+<div class="form-group">
+    <label for="v13">V13 (float64):</label>
+    <input type="text" class="form-control" id="v13" name="v13" required>
+</div>
+
+<div class="form-group">
+    <label for="v14">V14 (float64):</label>
+    <input type="text" class="form-control" id="v14" name="v14" required>
+</div>
+
+<div class="form-group">
+    <label for="v15">V15 (float64):</label>
+    <input type="text" class="form-control" id="v15" name="v15" required>
+</div>
+
+<div class="form-group">
+    <label for="v16">V16 (float64):</label>
+    <input type="text" class="form-control" id="v16" name="v16" required>
+</div>
+
+<div class="form-group">
+    <label for="v17">V17 (float64):</label>
+    <input type="text" class="form-control" id="v17" name="v17" required>
+</div>
+
+<div class="form-group">
+    <label for="v18">V18 (float64):</label>
+    <input type="text" class="form-control" id="v18" name="v18" required>
+</div>
+
+<div class "form-group">
+    <label for="v19">V19 (float64):</label>
+    <input type="text" class="form-control" id="v19" name="v19" required>
+</div>
+
+<div class="form-group">
+    <label for="v20">V20 (float64):</label>
+    <input type="text" class="form-control" id="v20" name="v20" required>
+</div>
+
+<div class="form-group">
+    <label for="v21">V21 (float64):</label>
+    <input type="text" class="form-control" id="v21" name="v21" required>
+</div>
+
+<div class="form-group">
+    <label for="v22">V22 (float64):</label>
+    <input type="text" class="form-control" id="v22" name="v22" required>
+</div>
+
+<div class="form-group">
+    <label for="v23">V23 (float64):</label>
+    <input type="text" class="form-control" id="v23" name="v23" required>
+</div>
+
+<div class="form-group">
+    <label for="v24">V24 (float64):</label>
+    <input type="text" class="form-control" id="v24" name="v24" required>
+</div>
+
+<div class="form-group">
+    <label for="v25">V25 (float64):</label>
+    <input type="text" class="form-control" id="v25" name="v25" required>
+</div>
+
+<div class="form-group">
+    <label for="v26">V26 (float64):</label>
+    <input type="text" class="form-control" id="v26" name="v26" required>
+</div>
+
+<div class="form-group">
+    <label for="v27">V27 (float64):</label>
+    <input type="text" class="form-control" id="v27" name="v27" required>
+</div>
+
+<div class="form-group">
+    <label for="v28">V28 (float64):</label>
+    <input type="text" class="form-control" id="v28" name="v28" required>
+</div>
+
+<div class="form-group">
+    <label for="amount">Amount (float64):</label>
+    <input type="text" class="form-control" id="amount" name="amount" required>
+</div>
+
+            
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+
+        <div id="hiddenDiv" style="display: none;">
+            Prediction: <span id="predictionValue"></span>
+        </div>
+        <script>
+            const myForm = document.getElementById('myForm');
+            const hiddenDiv = document.getElementById('hiddenDiv');
+            const predictionValueSpan = document.getElementById('predictionValue');
+    
+            myForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const formData = new FormData(myForm);
+    
+                // Make an AJAX request to your Flask server for prediction
+                fetch('/predict', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response
+                    const predictionValue = data.prediction;
+                    predictionValueSpan.textContent = predictionValue;
+                    hiddenDiv.style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error occurred during prediction:', error);
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
